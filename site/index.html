@@ -1,170 +1,195 @@
 <!doctype html>
 <html lang="en-US" class="no-js">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="/static/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="static/css/bitw.css" />
-    
-    <!-- OpenLayers https://openlayers.org/download/ -->
-    <script src="/static/js/ol.js"></script>
-    <link rel="stylesheet" href="/static/css/ol.css">
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/static/css/bitw.css"/>
+	<!-- OpenLayers https://openlayers.org/download/ -->
+	<script src="/static/js/ol.js"></script>
+	<link rel="stylesheet" href="/static/css/ol.css">
 
 </head>
-<BODY class="bgcol">
+<body class="bgcol">
 
 <div id="webapp">
-    <header class="l-header page">
-        <div class="page-header">
-            <a class="" href="/" title="Bitwäscherei">
-                <h1>Bitwäscherei</h1>
-            </a>
-            <p>Hackerspace-Kollektiv in Zürich</p>
-	    <p>"Ein Hackerspace oder Hackspace ist ein physischer, häufig offener Raum, in dem sich Hacker sowie an Wissenschaft, Technologie oder digitaler Kunst (und vielen anderen Bereichen) Interessierte treffen und austauschen können. Sie werden meist von Vereinen getragen, in denen sich die Interessenten organisieren." (Quelle: <a href="https://de.wikipedia.org/wiki/Hackerspace">Wikipedia</a>)</p>
-        </div>
-    </header>
-    <main class="l-main page">
-        <div>
-            <section class="l-section c-splash">
-                <header class="l-s-header">
-                    <span class="l-section__bg"></span>
-                        <div class="container-fluid">
-<div class="row">
-    <div class="col-sm"><h2>Das Projekt</h2>
-    <p>
-    Vier Vereine unter einem Dach
-    <ul>
-        <li>Chaos Computer Club Zürich (CCCZH)</li>
-        <li>Linux User Group Switzerland (LUGS, in Zürich)</li>
-        <li>MechArtLab (SGMK)</li>
-        <li>Digitale Gesellschaft</li>
-    </ul>
-    Ein Raum für <a href="#about-erfahr">Erfahrungsaustausch</a>, <a href="#about-medien">Medienarbeit</a> und <a href="#about-hackspace">Hackerspaces</a>
-    </p>
-    </div>
-    <div class="col-sm">
-        <a href="/static/img/PANO_20200822_235452~2.jpg" alt="Panorama der Bitwäscherei"><img src="/static/img/PANO_20200822_235452~2-small.jpg"
-            alt="Panorama der Bitwäscherei"
-            style="width: 100%" >Panorama der Bitwäscherei</a>
-    </div>
+	<header class="l-header page">
+		<div class="page-header">
+			<a href="/" title="Bitwäscherei">
+				<h1>Bitwäscherei</h1>
+				<p class="subtitle">Hackerspace-Kollektiv in Zürich</p>
+			</a>
+			<blockquote><p>Ein Hackerspace oder Hackspace ist ein physischer, häufig offener Raum, in dem sich Hacker sowie an Wissenschaft, Technologie oder digitaler Kunst (und vielen anderen Bereichen) Interessierte treffen und austauschen können. Sie werden meist von Vereinen getragen, in denen sich die Interessenten organisieren.</p>
+				<cite>(Quelle: <a href="https://de.wikipedia.org/wiki/Hackerspace">Wikipedia</a>)</cite>
+			</blockquote>
+		</div>
+	</header>
+	<main class="l-main page mb-5">
+		<div>
+			<section class="l-section c-splash">
+				<span class="l-section__bg"></span>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm"><h2>Das Projekt</h2>
+							<a href="/static/img/PANO_20200822_235452~2.jpg" alt="Panorama der Bitwäscherei"><img src="/static/img/PANO_20200822_235452~2-small.jpg" alt="Panorama der Bitwäscherei" style="width: 100%">Panorama der Bitwäscherei</a>
+							<div class="row mt-3 text-center">
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="border rounded p-2">
+										<div class="font-weight-bold pt-1">Chaos Computer Club Zürich (CCCZH)</div>
+										<br>
+										<img src="/static/img/logos/ccczh.png" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="border rounded p-2">
+										<div class="font-weight-bold pt-1">Linux User Group Switzerland (LUGS)</div>
+										<br>
+										<img src="/static/img/logos/lugs.gif" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="border rounded p-2">
+										<div class="font-weight-bold pt-1">MechArtLab (SGMK)</div>
+										<br>
+										<img src="/static/img/logos/sgmk.png" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="border rounded p-2">
+										<div class="font-weight-bold pt-1">Digitale Gesellschaft</div>
+										<br>
+										<img src="/static/img/logos/digiges.png" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="rounded p-2">
+										<div class="font-weight-bold pt-1">Hackteria</div>
+										<br>
+										<img src="/static/img/logos/hackteria.png" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+								<div class="col-md-4 p-2 verein_logo">
+									<div class="border rounded p-2">
+										<div class="font-weight-bold pt-1">Real-life Café</div>
+										<br>
+										<img src="/static/img/logos/reallife.png" class="img-fluid" style="height:80px;">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-5">
+						<div class="col-md-12">
+							<h2>So findest du uns</h2>
+						</div>
+						<div class="col-sm-8">
+							<div id="bitwMap"></div>
+						</div>
+						<div class="col-sm-4">Ehemalige Zentralwäscherei Zürich<br/><br/>Verein Bitwäscherei<br/>Neue Hard 12<br/>CH-8005 Zürich<br/>+41 44 520 98 37<br/>
+							<div style="font-size:.9em; margin-top:.5rem;">
+								(Zugang zum Hof über das grosse Tor, dann gleich rechts zwischen Haus und Garagen entlang und links durch die Glastür ins Haus, dort dann 3. OG rechts)
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-5">
+						<div class="col-12 col-md-8">
+							<h2>Das läuft gerade</h2>
+								<div class="event_next">
+									<div class="event_date">
+										<div class="event_day">15. Okt.</div>
+										<div class="event_time">ab 15 Uhr</div>
+									</div>
+									<div class="event_details">
+										<div class="event_title">Bitwäscherei-Party</div><br>
+										<p>
+											Vieles hat sich in den letzten Monaten getan in der Bitwäscherei. Unter anderem sind zwei neue Vereine (Real Life Café und Hackteria) der Bitwäscherei beigetreten. Zeit, dies mit einer Party zu begiessen. Die Party findet am 15. Oktober 2022 ab 15.00 Uhr in der Bitwäscherei, 3. Stock ZWZ, Neue Hard 12, in Zürich statt.
+											</p>
+										<p>
+											Wir beginnen die Party mit einer Kurzvorstellung aller Vereine und allfälliger persönlicher Projekte. Danach beginnt der lockere Teil des Anlasses.
+										</p>
+										<p>Bitte beachtet, dass dies keine offene Publikumsparty ist. Die Veranstaltung ist lediglich für Mitglieder und Anhang, sowie Kolleg:innen der jeweiligen Vereine und Interessent:innen, die sich einem der Vereine anschliessen möchten.
+										</p>
+									</div>
+								</div>
+							<p><b>Regelmässig:</b></p>
+							<ul class="event_overview">
+								<li><a href="https://mechatronicart.ch/mechartlab/">OpenLab</a> - jeden Dienstag ab 20 Uhr<br>Das offenes Elektroniklabor mit fachlicher Leitung, aktive Arbeit der Mitglieder an laufenden Projekten. Komm vorbei um Dich mit Gleichgesinnten auszutauschen, an laufenden Projekte mitzuwirken oder auch um z.B. zu lernen, wie man lötet, etwas zum blinken oder Geräusche machen bringt.
+								</li>
+								<li><a href="https://www.ccczh.ch/">ChaosTreff</a> - jeden Mittwoch&nbsp;ab 19 Uhr<br>Das offene Treffen des Chaos Computer Club Zürich, bei dem der Spass am Gerät grossgeschrieben wird, ohne aber den gesellschaftlichen Blick zu verlieren. Komm vorbei um verstehen zu lernen, oder aber beteilige Dich direkt an technischen und politischen Projekten.
+								</li>
+								<li><a href="https://www.hackteria.org/projects/news/hackteria-zet-open-science-lab-in-zurich/">Hackteria ZET | Open Science Lab</a> - jeden Montag ab 18 Uhr<br>Das Open Science Labor für Bio- und Chemie-Experimente, wie auch Bakterienspielereien und Wasserflohzirkus. Gemütlicher Austauch mit Freunden der DIY-Biologie, Fermentistas und Mycelium-Züchter. Diskussion zu den laufenden Projekten sind auf unserem <a href="https://forum.hackteria.org/c/opensciencelab/">Forum</a> zu finden.
+								</li>
+								<li><a href="https://www.lugs.ch/lugs/">Treff der Linux User Group Schweiz</a> - jede zweite Woche iternierend <a href="https://www.lugs.ch/lugs/termine/">Donnerstags oder Freitags</a> von 19 bis 21 Uhr<br>Treffen und Vorträge rund um Linux und Open Source.&nbsp;Durch&nbsp;den persönlichen Charakter wird der Einstieg in dieses weltweite Netzwerk leichter. 1994 gegründet und ist die erste Vereinigung der Schweiz, die sich ausschliesslich zur Aufgabe gemacht hat, Linux zu unterstützen.
+								</li>
+								<li><a href="https://www.digitale-gesellschaft.ch/">Digitale Gesellschaft</a> - jeden dritten Donnerstag im Monat von 19 bis 23 Uhr (mit thematischem Input von 20.00 bis 20.30 Uhr)<br>Der Netzpolitische Stammtisch für Austausch und Weiterentwicklung der Themen, Ideen, Plänen und Projekten der Digitalen Gesellschaft: Hilf mit, für eine nachhaltige, demokratische und freie Öffentlichkeit zu sorgen, und verteidige die Grundrechte in einer digital vernetzten Welt. Der thematische Input ist zu einem jeweils aktuellen Thema; am 17. September berichten wir über das Datenschutzgesetz, das am selben Tag im Parlament beraten wird.
+								</li>
+								<li><a href="https://openstreetmap.org">Open Street Map</a> - Stammtisch jeweils am 11. des Monats ab 18:30 Uhr<br>Beim <a href="https://wiki.openstreetmap.org/wiki/DE:Switzerland:Z%C3%BCrich/OSM-Treffen">Zürcher Stammtisch der OpenStreetMapper/innen</a> wird aktiv an Open Street Map weitergearbeitet, überarbeitet, überprüft und überblickt - ausserdem werden Details und Grundsätze diskutiert und weiter ausgearbeitet. Keine Vorkenntnisse nötig!
+								</li>
+							</ul>
+							<br>
+							<p><b>Unregelmässig</b></p>
+							<ul>
+								<li>Zusätzlich dazu gibt es in der Bitwäscherei einen grossen Haufen Sitzungen und Arbeitstreffen, sowie natürlich auch Aktivitäten von vereinsinternen Arbeitsgruppen - sobald Du an einem der öffentlichen Treffen teilnimmst, wirst Du schnell mitbekommen, was sonst so läuft -- und ehe man sichs versieht steckt man mittendrin.
+								</li>
+								<li>Daneben laufen immer wieder andere Veranstaltungen, Anlässe und Workshops unterschiedlicher Art, sofern sie nicht von einem Virus boykottiert werden ;)
+								</li>
+								<li>Zum Beispiel von der <a href="https://www.digitale-gesellschaft.ch/">Digitalen Gesellschaft</a>: öffentliche Workshops/Talks zu Digitalem Aikido (4xJahr) u.ä.; Frühlings- &amp; Herbsttreffen (ganztags, 25-30 Personen &amp; Essen), Vorstandssitzungen &amp; sonstige Besprechungen, Büronutzung ganztags, täglich
+								</li>
+							</ul>
+						</div>
+						<div class="col-12 col-md-4">
+							<h2>Bleib informiert</h2>
+							<p>Tritt mit uns über folgende Kanäle in Verbindung oder komm einfach direkt vorbei!</p>
+							<p>Abonnier die Mailingliste: <a href="https://lists.chaostreff.ch/postorius/lists/bitwascherei.chaostreff.ch/">bitwascherei@chaostreff.ch</a>
+							<p>Abonnier den Kalender: <a href="https://wiki.digitale-gesellschaft.ch/rest/calendar-services/1.0/calendar/export/subcalendar/private/8cd4ca111f3046ad3ffc4d9e16a894f57f2d611b.ics">ICS-Datei</a>
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Matrix-Chat</h5>
+									<p class="card-text">
+										Als Messenger benutzen wir zunehmend einen Matrix-Server, wo du selbst einen Account eröffnen kannst. Es gibt verschiedene öffentliche Räume. Für nicht-öffentliche Räume wende dich bitte an den jeweiligen Verein.
+									</p>
+									<a href="https://chat.digitale-gesellschaft.ch" target="_blank" class="btn btn-primary">chat.digitale-gesellschaft.ch</a>
+								</div>
+							</div>
+
+							<div class="card" style="margin-top:1rem;">
+								<div class="card-body">
+									<h5 class="card-title">Adventure-Time</h5>
+									<p class="card-text">
+										Du möchtest an einer Veranstaltung teilnehmen, kannst aber nicht vor Ort sein? Schaue einfach digital über workadventu.re rein und kommunizieren im Voice-/Video-Chat mit anderen.
+									</p>
+									<a href="https://lab.mechatronicart.ch/" target="_blank" class="btn btn-primary">lab.mechatronicart.ch</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
 </div>
 
 
-<hr />
-<div class="row">
-  <div class="col-sm-8">
-      <div id="bitwMap"></div>
-  </div>
-  <div class="col-sm-4">Ehemalige Zentralwäscherei Zürich<br/><br/>Verein Bitwäscherei<br/>Neue Hard 12<br/>CH-8005 Zürich<br/>+41 44 520 98 37<br/>(Zugang zum Hof über das grosse Tor, dann gleich rechts zwischen Haus und Garagen entlang und links durch die Glastür ins Haus, dort dann 3. OG rechts)</div>
-</div>
+<script type="text/javascript">
+	var map = new ol.Map({
+		target: 'bitwMap',
+		layers: [
+			new ol.layer.Tile({
+				source: new ol.source.OSM()
+			})
+		],
+		view: new ol.View({
+			center: ol.proj.fromLonLat([8.520364, 47.387064]),
+			zoom: 16
+		})
+	});
+</script>
 
-
-<div class="row wip">
-  <div class="col-sm">col-sm</div>
-  <div class="col-sm">col-sm</div>
-  <div class="col-sm">col-sm</div>
-</div>
-
-<hr />
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="row">
-  <div class="col-12 col-md-8">
-      <h2>Das läuft gerade</h2>
-  <p>
-Der Ausbruch der Corona-Pandemie im Jahre 2020 wird Euch nicht entgangen sein - trotzdem versuchen wir, unsere regelmässigen Veranstaltungen und Treffen im Rahmen des Möglichen stattfinden zu lassen. Natürlich haben auch wir ein <a href="https://wiki.sgmk-ssam.ch/images/5/52/BIT-25854709-120920-1630-6.pdf">Hygieneschutzkonzept (PDF).</a>
-  </p>
-  <p>
-Da unsere Webseite der durchschnittlichen Aktualität des WWWs entspricht: Bitte informiert Euch im Zweifelsfalle vorher nochmals über die jeweilige Webseite oder auch direkt bei uns (siehe oben) über den aktuellen Status. 
-  </p>
-  <p><b>Regelmässig:</b>
-	<ul>
-		<li><a href="https://mechatronicart.ch/mechartlab/">OpenLab</a> - jeden Dienstag ab 20 Uhr<br>Das offenes Elektroniklabor mit fachlicher Leitung, aktive Arbeit der Mitglieder an laufenden Projekten. Komm vorbei um Dich mit Gleichgesinnten auszutauschen, an laufenden Projekte mitzuwirken oder auch um z.B. zu lernen, wie man lötet, etwas zum blinken oder Geräusche machen bringt.
-		</li>
-		<li><a href="https://www.ccczh.ch/">ChaosTreff</a> - jeden Mittwoch&nbsp;ab 19 Uhr<br>Das offene Treffen des Chaos Computer Club Zürich, bei dem der Spass am Gerät grossgeschrieben wird, ohne aber den gesellschaftlichen Blick zu verlieren. Komm vorbei um verstehen zu lernen, oder aber beteilige Dich direkt an technischen und politischen Projekten.
-		</li>
-		<li><a href="https://www.hackteria.org/projects/news/hackteria-zet-open-science-lab-in-zurich/">Hackteria ZET | Open Science Lab</a> - jeden Montag ab 18 Uhr<br>Das Open Science Labor für Bio- und Chemie-Experimente, wie auch Bakterienspielereien und Wasserflohzirkus. Gemütlicher Austauch mit Freunden der DIY-Biologie, Fermentistas und Mycelium-Züchter. Diskussion zu den laufenden Projekten sind auf unserem <a href="https://forum.hackteria.org/c/opensciencelab/">Forum</a> zu finden.
-		</li>
-		<li><a href="http://www.lugs.ch/lugs/">Treff der Linux User Group Schweiz</a> - jede zweite Woche iternierend <a href="http://www.lugs.ch/lugs/termine/">Donnerstags oder Freitags</a> von 19 bis 21 Uhr<br>Treffen und Vorträge rund um Linux und Open Source.&nbsp;Durch&nbsp;den persönlichen Charakter wird der Einstieg in dieses weltweite Netzwerk leichter. 1994 gegründet und ist die erste Vereinigung der Schweiz, die sich ausschliesslich zur Aufgabe gemacht hat, Linux zu unterstützen.
-		</li>
-		<li><a href="https://www.digitale-gesellschaft.ch/">Digitale Gesellschaft</a> - jeden dritten Donnerstag im Monat von 19 bis 23 Uhr (mit thematischem Input von 20.00 bis 20.30 Uhr)<br>Der Netzpolitische Stammtisch für Austausch und Weiterentwicklung der Themen, Ideen, Plänen und Projekten der Digitalen Gesellschaft: Hilf mit, für eine nachhaltige, demokratische und freie Öffentlichkeit zu sorgen, und verteidige die Grundrechte in einer digital vernetzten Welt. Der thematische Input ist zu einem jeweils aktuellen Thema; am 17. September berichten wir über das Datenschutzgesetz, das am selben Tag im Parlament beraten wird.
-		</li>
-		<li><a href="https://openstreetmap.org">Open Street Map</a> - Stammtisch jeweils am 11. des Monats ab 18:30 Uhr<br>Beim <a href="https://wiki.openstreetmap.org/wiki/DE:Switzerland:Z%C3%BCrich/OSM-Treffen">Zürcher Stammtisch der OpenStreetMapper/innen</a> wird aktiv an Open Street Map weitergearbeitet, überarbeitet, überprüft und überblickt - ausserdem werden Details und Grundsätze diskutiert und weiter ausgearbeitet. Keine Vorkenntnisse nötig!
-		</li>
-	</ul>
-  </p>
-  <p><b>Unregelmässig</b>
-        <ul>
-		<li>Zusätzlich dazu gibt es in der Bitwäscherei einen grossen Haufen Sitzungen und Arbeitstreffen, sowie natürlich auch Aktivitäten von vereinsinternen Arbeitsgruppen - sobald Du an einem der öffentlichen Treffen teilnimmst, wirst Du schnell mitbekommen, was sonst so läuft -- und ehe man sichs versieht steckt man mittendrin. 
-		</li>
-		<li>Daneben laufen immer wieder andere Veranstaltungen, Anlässe und Workshops unterschiedlicher Art, sofern sie nicht von einem Virus boykottiert werden ;)
-		</li>
-		<li>Zum Beispiel von der <a href="https://www.digitale-gesellschaft.ch/">Digitalen Gesellschaft</a>: öffentliche Workshops/Talks zu Digitalem Aikido (4xJahr) u.ä.; Frühlings- &amp; Herbsttreffen (ganztags, 25-30 Personen &amp; Essen), Vorstandssitzungen &amp; sonstige Besprechungen, Büronutzung ganztags, täglich
-		</li>
-	</ul>
-  </p>
-  </div>
-  <div class="col-6 col-md-4">
-  <h2>Bleib informiert</h2>
-  <p>Verweise auf Kommunikationskanäle werden hier irgendwann ergänzt, aber wir sind scheu, komm' lieber vorbei!</p>
-  <p>Abonnier die Mailingliste: <a href="https://lists.chaostreff.ch/postorius/lists/bitwascherei.chaostreff.ch/">bitwascherei@chaostreff.ch</a>
-  <p>Abonnier den Kalender: <a href="https://wiki.digitale-gesellschaft.ch/rest/calendar-services/1.0/calendar/export/subcalendar/private/8cd4ca111f3046ad3ffc4d9e16a894f57f2d611b.ics">ICS-Datei</a>
-  </div>
-</div>
-
-<hr />
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="row">
-  <div class="col-6 col-md-4">
-      <a id="about-erfahr"></a>
-      <h3>Erfahrung</h3>
-      <p></p>
-  </div>
-  <div class="col-6 col-md-4">
-      <a id="about-medien"></a>
-      <h3>Medienarbeit</h3>
-      <p></p>
-  </div>
-  <div class="col-6 col-md-4">
-      <a id="about-hackspace"></a>
-      <h3>Hackerspace</h3>
-      <p></p>
-  </div>
-</div>
-
-<!-- Columns are always 50% wide, on mobile and desktop -->
-<div class="row wip">
-  <div class="col-6">.col-6</div>
-  <div class="col-6">.col-6</div>
-</div>
-                    </div>
-                </header>
-
-                <article>
-                </article>
-            </section>
-        </div>
-    </main>
-</div>
-
-
-    <script type="text/javascript">
-      var map = new ol.Map({
-        target: 'bitwMap',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([8.520364, 47.387064]),
-            zoom: 16
-        })
-      });
-    </script>
-  
-</BODY>
+</body>
 </HTML>
 
