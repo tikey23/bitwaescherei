@@ -1,3 +1,8 @@
+<?php
+
+require_once('Page.php');
+$page = new Page();
+?>
 <!doctype html>
 <html lang="de-CH">
 <head>
@@ -23,8 +28,6 @@
 					<svg width="220" height="220" class="m-auto lg:m-0">
 						<image xlink:href="/static/img/bw-logo-2022.svg" src="/static/img/BW-logo-2022.png" width="220" height="220"/>
 					</svg>
-					<!--				<h1 class="text-5xl font-bold text-teal-200">Bitwäscherei</h1>-->
-					<!--				-->
 				</a>
 			</div>
 			<div class="w-auto lg:w-2/3 mt-12">
@@ -101,25 +104,44 @@
 				<div class="w-full lg:w-2/3">
 					<h2 class="text-3xl font-bold my-4 neon">Das läuft gerade</h2>
 
-					<!--					<div class="block lg:flex bg-gradient-to-bl from-blue-800 to-purple-800 my-2">-->
-					<!--						<div class="bg-blue-100/30 lg:w-1/4 p-4 text-right">-->
-					<!--							<div class="text-4xl font-bold">15. Okt.</div>-->
-					<!--							<div class="text-2xl">ab 15 Uhr</div>-->
-					<!--						</div>-->
-					<!--						<div class="lg:w-3/4 p-4">-->
-					<!--							<div class="text-3xl">Bitwäscherei-Party</div>-->
-					<!--							<br>-->
-					<!--							<p>-->
-					<!--								Vieles hat sich in den letzten Monaten getan in der Bitwäscherei. Unter anderem sind zwei neue Vereine (Real Life Café und Hackteria) der Bitwäscherei beigetreten. Zeit, dies mit einer Party zu begiessen. Die Party findet am 15. Oktober 2022 ab 15.00 Uhr in der Bitwäscherei, 3. Stock ZWZ, Neue Hard 12, in Zürich statt.-->
-					<!--							</p>-->
-					<!--							<p>-->
-					<!--								Wir beginnen die Party mit einer Kurzvorstellung aller Vereine und allfälliger persönlicher Projekte. Danach beginnt der lockere Teil des Anlasses.-->
-					<!--							</p>-->
-					<!--							<p>Bitte beachtet, dass dies keine offene Publikumsparty ist. Die Veranstaltung ist lediglich für Mitglieder und Anhang, sowie Kolleg:innen der jeweiligen Vereine und Interessent:innen, die sich einem der Vereine anschliessen möchten.-->
-					<!--							</p>-->
-					<!--						</div>-->
-					<!--					</div>-->
-					<p><b>Regelmässig:</b></p>
+					<p class="text-sm text-gray-400">Änderungen vorbehalten - Angaben ohne Gewähr. Bitte vergewissere dich beim jeweiligen Veranstalter, ob und wie das Event stattfindet.</p>
+					<div class="overflow-x-scroll overflow-y-hidden flex gap-2 p-2">
+						<?php foreach ($page->getNextEvents() as $event) { ?>
+							<div class="group bg-gradient-to-br from-blue-800 to-purple-800 my-3 p-2 w-[300px] flex-none relative">
+								<div class="text-xs absolute right-2 ml-2 mt-1 inline py-0.5 px-1.5 ring-1 ring-purple-400 bg-purple-900 rounded-xl uppercase"><?= $event['verein'] ?></div>
+
+								<div class="font-bold"><?= $event['startdate'] ?> Uhr</div>
+								<?php if (substr($event['startdate'], 0, 10) != substr($event['enddate'], 0, 10)) { ?>
+									<div class="h-6 text-sm"><?= $event['enddate'] ?> Uhr</div>
+								<?php } else { ?>
+									<div class="h-6"></div>
+								<?php } ?>
+								<div class="mb-2 text-xl">
+									<?= $event['title'] ?>
+								</div>
+								<div class="text-sm min-h-[100px] h-24 transition-all duration-500 ease-in-out overflow-hidden group-hover:h-full"><?= $event['description'] ?></div>
+							</div>
+						<?php } ?>
+					</div>
+					<br>
+					<!--										<div class="block lg:flex bg-gradient-to-bl from-blue-800 to-purple-800 my-2">-->
+					<!--											<div class="bg-blue-100/30 lg:w-1/4 p-4 text-right">-->
+					<!--												<div class="text-4xl font-bold">15. Okt.</div>-->
+					<!--												<div class="text-2xl">ab 15 Uhr</div>-->
+					<!--											</div>-->
+					<!--											<div class="lg:w-3/4 p-4">-->
+					<!--												<div class="text-3xl">Bitwäscherei-Party</div>-->
+					<!--												<br>-->
+					<!--												<p>-->
+					<!--													Vieles hat sich in den letzten Monaten getan in der Bitwäscherei. Unter anderem sind zwei neue Vereine (Real Life Café und Hackteria) der Bitwäscherei beigetreten. Zeit, dies mit einer Party zu begiessen. Die Party findet am 15. Oktober 2022 ab 15.00 Uhr in der Bitwäscherei, 3. Stock ZWZ, Neue Hard 12, in Zürich statt.-->
+					<!--												</p>-->
+					<!--												<p>-->
+					<!--													Wir beginnen die Party mit einer Kurzvorstellung aller Vereine und allfälliger persönlicher Projekte. Danach beginnt der lockere Teil des Anlasses.-->
+					<!--												</p>-->
+					<!--												<p>Bitte beachtet, dass dies keine offene Publikumsparty ist. Die Veranstaltung ist lediglich für Mitglieder und Anhang, sowie Kolleg:innen der jeweiligen Vereine und Interessent:innen, die sich einem der Vereine anschliessen möchten.-->
+					<!--												</p>-->
+					<!--											</div>-->
+					<!--										</div>-->
 					<ul class="event_overview">
 						<li><span class="font-bold"><a href="https://mechatronicart.ch/mechartlab/" target="_blank">OpenLab</a> - jeden Dienstag ab 20 Uhr</span><br>
 							Das offenes Elektroniklabor mit fachlicher Leitung, aktive Arbeit der Mitglieder an laufenden Projekten. Komm vorbei um Dich mit Gleichgesinnten auszutauschen, an laufenden Projekte mitzuwirken oder auch um z.B. zu lernen, wie man lötet, etwas zum blinken oder Geräusche machen bringt.
