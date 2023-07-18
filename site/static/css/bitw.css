@@ -140,6 +140,14 @@ blockquote cite {
     0 0 20px rgb(153 246 228);
 }
 
+.neondarker {
+    color: rgb(104, 230, 246);
+    text-shadow: 0 0 10px rgb(40, 60, 68),
+    0 0 20px rgb(87, 152, 139),
+    0 0 20px rgb(87, 152, 139),
+    0 0 20px rgb(87, 152, 139);
+}
+
 .neonball {
     position: absolute;
     opacity: .7;
