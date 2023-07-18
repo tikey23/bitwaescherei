@@ -47,7 +47,7 @@ $page = new Page();
 							<div class="mb-2 text-4xl">
 								<?= $event['title'] ?>
 							</div>
-							<div class="text-lg"><?= $event['description'] ?></div>
+							<div class="text-2xl pt-2.5"><?= $event['description'] ?></div>
 						</div>
 					<?php } ?>
 				</div>
