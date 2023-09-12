@@ -54,7 +54,7 @@ class Page {
 	public function getEvents() {
 		return $this->db->query("SELECT * FROM events WHERE `enddate` >= '".date("Y-m-d")."' ORDER BY `id`");
 	}
-	public function getNextEvents() {
+	public function getNextEvents($limit = 10) {
 		$events = [];
 
 		foreach ($this->db->query("select * from events where enddate >= '" . date("Y-m-d") . " 00:00:01' ORDER BY `startdate` ASC")->fetchAll() as $key => $event) {
@@ -69,7 +69,10 @@ class Page {
 
 		$this->addWeeklyEvents($events);
 		ksort($events);
-		return $events;
+
+		$events = array_chunk($events, $limit);
+
+		return $events[0];
 	}
 
 	private function addWeeklyEvents(&$events) {
