@@ -76,7 +76,7 @@ class Page {
 	}
 
 	private function addWeeklyEvents(&$events) {
-		$timestamp = strtotime('next tuesday');
+		$timestamp = (date('D') == 'Tue' ? strtotime('today') : strtotime('next tuesday'));
 		$events[$timestamp] = [
 			"title" => "Openlab",
 			"description" => "Das offenes Elektroniklabor mit fachlicher Leitung, aktive Arbeit der Mitglieder an laufenden Projekten. Komm vorbei um Dich mit Gleichgesinnten auszutauschen, an laufenden Projekte mitzuwirken oder auch um z.B. zu lernen, wie man lötet, etwas zum blinken oder Geräusche machen bringt.",
@@ -85,7 +85,7 @@ class Page {
 			"enddate" => $this->getDate($timestamp) . " 23:30",
 		];
 
-		$timestamp = strtotime('next wednesday');
+		$timestamp = (date('D') == 'Wed' ? strtotime('today') : strtotime('next wednesday'));
 		$events[$timestamp] = [
 			"title" => "ChaosTreff",
 			"description" => "Das offene Treffen des Chaos Computer Club Zürich, bei dem der Spass am Gerät grossgeschrieben wird, ohne aber den gesellschaftlichen Blick zu verlieren. Komm vorbei um verstehen zu lernen, oder aber beteilige Dich direkt an technischen und politischen Projekten.",
@@ -103,7 +103,7 @@ class Page {
 	}
 
 	private function addDigiGesEvents(&$events) {
-		$timestamp = strtotime('next thursday');
+		$timestamp = (date('D') == 'Thu' ? strtotime('today') : strtotime('next thursday'));
 		$date = new DateTime();
 		$date->setTimestamp($timestamp);
 		$nextEventMonth = IntlDateFormatter::formatObject($date, 'M', 'de');
@@ -132,14 +132,14 @@ class Page {
 
 	private function addLugsEvents(&$events) {
 		$today = date("Y-m-d");
-		$timestamp = strtotime('2023-06-15 19:15:00');
+		$timestamp = strtotime('2024-02-15 19:15:00');
 		$thursday = new DateTime();
 		$thursday->setTimestamp($timestamp);
 		while($thursday->format("Y-m-d") < $today) {
 			$thursday->add(DateInterval::createFromDateString('4 week'));
 		}
 
-		$timestamp = strtotime('2023-06-30 19:15:00');
+		$timestamp = strtotime('2024-03-01 19:15:00');
 		$friday = new DateTime();
 		$friday->setTimestamp($timestamp);
 		while($friday->format("Y-m-d") < $today) {
