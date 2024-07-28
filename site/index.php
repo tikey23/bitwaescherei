@@ -37,6 +37,11 @@ $page = new Page();
 						Im Sommer 2020 entstand eine neue Hackerspace Gemeinschaft im Herzen von Zürich, als kollektives Unterfangen im Zusammenschluss von Chaos Computer Club Zürich <span class="text-xs bg-teal-700 text-gray-100 ring-1 ring-purple-400 px-1.5 py-1 mx-1 rounded">CCCZH</span>, Schweizerische Gesellschaft für Mechatronische Kunst <span class="text-xs bg-teal-700 text-gray-100 ring-1 ring-purple-400 px-1.5 py-1 mx-1 rounded">SGMK</span>, Digitale Gesellschaft <span class="text-xs bg-teal-700 text-gray-100 ring-1 ring-purple-400 px-1.5 py-1 mx-1 rounded">DigiGes</span>, Linux User Group Schweiz <span class="text-xs bg-teal-700 text-gray-100 ring-1 bg-teal-700 px-1.5 py-1 mx-1 rounded">LUGS</span>, und später dazugestossen sind dann noch das Real Life Café <span class="text-xs bg-teal-700 text-gray-100 ring-1 ring-purple-400 px-1.5 py-1 mx-1 rounded">RL</span> und Hackteria.
 					</p>
 				</blockquote>
+
+                    <div style="border-radius: 20px; margin-top: 50px; text-align: center; font-size:1.4em; padding:4px; background: rgba(200,100,100, 0.5)">
+                        Erhalte auf der Mailing-Liste: <a href="mailto:bitwascherei@chaostreff.ch" style="color: white;">bitwascherei@chaostreff.ch</a>
+                    </div>
+
 			</div>
 		</div>
 	</header>
@@ -305,13 +310,6 @@ $page = new Page();
 						<a href="/static/img/gallery/001.jpg" class="w-full h-64 p-1 md:p-2">
 							<img alt="gallery" class="hover:brightness-50 transition block object-cover object-center w-full h-full rounded"
 								 src="/static/img/gallery/small/001.jpg">
-						</a>
-					</div>
-
-					<div class="flex flex-wrap w-1/2 lg:w-1/4">
-						<a href="/static/img/gallery/002.jpg" class="w-full h-64 p-1 md:p-2">
-							<img alt="gallery" class="hover:brightness-50 transition block object-cover object-center w-full h-full rounded"
-								 src="/static/img/gallery/small/002.jpg">
 						</a>
 					</div>
 					<div class="flex flex-wrap w-1/2 lg:w-1/4">
