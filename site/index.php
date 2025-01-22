@@ -401,6 +401,103 @@ $page = new Page();
 			</div>
 		</section>
 
+		<section class="mt-12">
+			<div class="grid grid-cols-2 gap-8">
+				<div>
+					<h2 class="text-3xl font-bold my-4 neon">Unser Leitbild</h2>
+					<div class="container gap-4 space-y-4">
+						<div><strong>Ziel</strong><br>
+							Die Bitwäscherei ist ein Raum um Kontakte zu knüpfen und den Austausch von Wissen zu
+							ermöglichen. Wir möchten ein inspirierender Ort sein um kulturelle, technologische,
+							künstlerische und soziale Interaktionen zu ermöglichen. Dazu bieten wir eine umfangreiche
+							Infrastruktur und helfen Ideen zu entwickeln und umzusetzen. Wir arbeiten an Hardware,
+							Digitalen
+							sowie konzeptionellen Themen und wollen auch die Realisierung von ungewöhnlichen Ideen
+							ermöglichen.
+						</div>
+						<div>
+							<strong>Nutzungen</strong><br>
+							Die Bitwäscherei bietet den Rahmen um den beteiligten Vereinen ihre unterschiedlichen
+							Nutzungen
+							zu ermöglichen. Individuelles Arbeiten ist ebenso willkommen, wie gemeinsame Projekte in den
+							Vereinen und über die Vereine hinaus. Wir sind ein Community Space und haben keine
+							persönlichen
+							Arbeitsplätze. Wir richten unser Space wohnlich ein aber wohnen nicht hier. Wir bieten Raum
+							für
+							Experimente und kreative Nutzungen und möchten damit auch Öffentlichkeit schaffen.
+						</div>
+						<div>
+							<strong>Umgang</strong><br>
+							Be exellent to each other. Wir gehen wohlwollend und unterstützend miteinander um. Wir
+							respektieren unsere eigenen und die physische und emotionale Grenzen anderer. Bei unseren
+							Handlung stellen wir die gegenseitige Zustimmung sicher. Dabei setzen wir auf Freiheit und
+							Selbstverantwortung.
+							<br>
+							Diskriminierung, Gewalt sowie übergriffiges oder respektloses Verhalten dulden wir in keiner
+							Weise in der Bitwäscherei. Wer sich sexistisch, rassistisch, homo-/transfeindlich,
+							ableistisch
+							oder sonst menschenfeindlich verhält, muss unseren Space verlassen. Unser Care Team ist
+							erste
+							Anlaufstelle wenn wir problematischen Verhalten erleben oder beobachten.
+						</div>
+						<div>
+							<strong>Achtsamkeit</strong><br>
+							Wir geben aufeinander und uns selber acht und leben eine aktive Willkommenskultur. Menschen
+							welche zum ersten mal die Bitwäscherei besuchen, begrüssen wir freundlich und erläutern die
+							Organisation der Bitwäscherei und erklären die Regeln.
+							<br>
+							Wir respektieren die Privatsphäre und achten auf die Balance, wenn eine starke Nutzung von
+							einzelnen erfolgt oder diese übermässig viel Raum einnehmen (räumlich und bei
+							Entscheidungen).
+						</div>
+					</div>
+				</div>
+				<div>
+					<h2 class="text-3xl font-bold my-4 neon">Charta</h2>
+					<div class="container gap-4 space-y-4">
+						<div><strong>Target</strong><br>
+							The Bitwäscherei is a space for socialising and exchanging knowledge. We want to be an
+							inspiring place for cultural, technological, artistic and social interaction. To this end,
+							we offer a comprehensive infrastructure and help to develop and realise ideas. We work on
+							hardware, digital and conceptual topics and also want to enable the realisation of unusual
+							ideas.
+						</div>
+						<div>
+							<strong>Uses</strong><br>
+							The Bitwäscherei provides the framework to enable the participating organisations to use the
+							space in different ways. Individual work is just as welcome as joint projects within the
+							clubs and beyond. We are a community space and have no personal workplaces. We arrange our
+							space in a homely way but do not live here. We offer space for experiments and creative uses
+							and also want to create publicity.
+						</div>
+						<div>
+							<strong>Interaction</strong><br>
+							Be excellent to each other.
+
+							We treat each other with kindness and support. We respect our own and others' physical and
+							emotional boundaries. We ensure mutual consent in our actions. In doing so, we emphasise
+							freedom and personal responsibility.
+
+							We do not tolerate discrimination, violence or abusive or disrespectful behaviour in any way
+							within Bitwäscherei. Anyone who engages in sexist, racist, homophobic/transphobic, ableist
+							or other misanthropic behaviour must leave our space. Our Care Team is the first point of
+							contact if we experience or observe problematic behaviour.
+						</div>
+						<div>
+							<strong>Awareness</strong><br>
+							We take care of each other and ourselves and live an active welcoming culture. We greet
+							people who visit the Bitwäscherei for the first time in a friendly manner and explain the
+							organisation of the Bitwäscherei and the rules.
+							<br>
+							We respect privacy and pay attention to balance when there is heavy use by individuals or
+							when they take up an excessive amount of space (spatially and when making decisions).
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 		<footer class="pt-4 my-8 text-teal-200">
 			<div class="w-full py-8">
 				<div class="relative w-full">
