@@ -402,7 +402,7 @@ $page = new Page();
 		</section>
 
 		<section class="mt-12">
-			<div class="grid grid-cols-2 gap-8">
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 				<div>
 					<h2 class="text-3xl font-bold my-4 neon">Unser Leitbild</h2>
 					<div class="container gap-4 space-y-4">
