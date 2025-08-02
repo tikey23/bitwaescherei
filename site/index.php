@@ -450,6 +450,11 @@ $page = new Page();
 							einzelnen erfolgt oder diese übermässig viel Raum einnehmen (räumlich und bei
 							Entscheidungen).
 						</div>
+						<div>
+							<strong>Berrierefreiheit</strong><br>
+							Unser Raum ist barrierefrei und verfügen im EG über ein barrerierefreie Toilette.
+							Dann habe ich gesehen, dass wir bei ProInfirmis App keinen Eintrag haben mit der Ginto App und Pro Infirmis App
+						</div>
 					</div>
 				</div>
 				<div>
