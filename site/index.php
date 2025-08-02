@@ -39,7 +39,7 @@ $page = new Page();
 				</blockquote>
 
                     <div style="border-radius: 20px; margin-top: 50px; text-align: center; font-size:1.4em; padding:4px; background: rgba(200,100,100, 0.5)">
-                        Erhalte auf der Mailing-Liste: <a href="mailto:bitwascherei@chaostreff.ch" style="color: white;">bitwascherei@chaostreff.ch</a>
+                        Trage dich ein in die Mailing-Liste: <a href="mailto:bitwascherei@chaostreff.ch" style="color: white;">bitwascherei@chaostreff.ch</a>
                     </div>
 
 			</div>
@@ -194,9 +194,9 @@ $page = new Page();
 						<div class="p-4">
 							<div class="text-2xl text-teal-200">Matrix-Chat</div>
 							<p class="my-4">
-								Als Messenger benutzen wir zunehmend einen Matrix-Server, wo du selbst einen Account eröffnen kannst. Es gibt verschiedene öffentliche Räume. Für nicht-öffentliche Räume wende dich bitte an den jeweiligen Verein.
+								Als Messenger benutzen wir zunehmend einen Matrix-Server, wo du selbst einen Account eröffnen kannst. Es gibt verschiedene öffentliche Räume. Für nicht-öffentliche Räume wende dich bitte an den jeweiligen Verein. Um die Bitwäscherei im allgemeinen zu erreichen dient der Raum #bw-general:chab.is
 							</p>
-							<a class="inline-block px-6 py-2 border-2 border-teal-400  font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="https://chat.digitale-gesellschaft.ch" target="_blank">chat.digitale-gesellschaft.ch</a>
+							<a class="inline-block px-6 py-2 border-2 border-teal-400  font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="https://plauder.chab.is" target="_blank">plauder.chab.is</a>
 						</div>
 					</div>
 					<div class="bg-gradient-to-br from-blue-800 to-purple-800 my-6">
